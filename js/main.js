@@ -1,32 +1,3 @@
-// import { applyLightenedColor } from '.js/lightcolor.js';
-// import { applyDarkenedColor } from '.js/darkcolor.js';
-// import { applyInvertedColor } from '.js/invertcolor.js';
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const colorPicker = document.getElementById('colorPicker');
-
-//     // 明るいコントラスト
-//     const lightContrast = document.getElementById('lightContrast');
-//     const textLight = document.getElementById('textLight');
-
-//     // 暗いコントラスト
-//     const darkContrast = document.getElementById('darkContrast');
-//     const textDark = document.getElementById('textDark');
-
-//     // 逆相の色
-//     const invertContrast = document.getElementById('invertContrast');
-//     const textInverse = document.getElementById('textInverse');
-
-//     // 明るい色を適用
-//     applyLightenedColor(colorPicker, lightContrast, textLight);
-
-//     // 暗い色を適用
-//     applyDarkenedColor(colorPicker, darkContrast, textDark);
-
-//     // 逆相の色を適用
-//     applyInvertedColor(colorPicker, invertContrast, textInverse);
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const colorPicker = document.getElementById("colorPicker");
 
