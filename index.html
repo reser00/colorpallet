@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>colorpallet@</title>
+    <meta name="decription" content="this is my first HTML/CSS/JavaScript application." />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="title" href="./index.html">
+          <img src="./img/common/title.png" alt="colorpallet@" />
+        </a>
+        <div class="header-site-menu">
+          <nav class="site-menu">
+            <ul>
+              <li>あばうと</li>
+              <li>つかいかた</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <div class="color-pallet">
+        <h2>色を選んでください</h2>
+        <input type="color" id="colorPicker" value="#FFFFFF" />
+        <div class="selectedColor" id="selectColor">
+          <p>あなたが選んだのは</p>
+          <p id="bodyText">カラーコード</p>
+        </div>
+        <!--javascriptのgetElementById()の参照用にidも指定しておきたい-->
+      </div>
+
+      <div class="container">
+        <div class="partition" id="lightContrast">
+          <h2>明るい影や<br>縁取りに</h2>
+          <div class="content">
+            <p class="transColor" id="textLight">明るいコントラスト</p>
+          </div>
+        </div>
+        <div class="partition" id="darkContrast">
+          <h2>暗い影が<br>欲しいときに</h2>
+          <div class="content">
+            <p class="transColor" id="textDark">暗いコントラスト</p>
+          </div>
+        </div>
+        <div class="partition" id="invertContrast">
+          <h2>目立たせたい<br>ところに</h2>
+          <div class="content">
+            <p class="transColor" id="textInverse">逆相の色</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p class="copyright">©︎ 2024 reser00</p>
+    </footer>
+
+    <script type="module" src="/js/colorpick.js" defer></script>
+    <script src="/js/main.js" defer></script>
+  </body>
+</html>
