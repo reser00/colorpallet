@@ -13,19 +13,39 @@ ol {
   list-style: none;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
 button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 0;
-  border-radius: 0;
-  background: #ccc;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
 }
+
 
 /* リセット完了 */
 
@@ -46,11 +66,13 @@ body {
 .titleCopy {
   font-family:"Jura", serif;
   -webkit-text-stroke: 1px #fff;
+  font-size: 50px;
+  letter-spacing: 5px;
 }
 
 .titleCopy span{
   color:rgb(213, 128, 213);
-  font-size:50px;
+  font-size:75px;
   font-weight:bold;
 }
 
@@ -64,6 +86,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .header-site-menu {
@@ -75,15 +98,42 @@ body {
 }
 
 .btn {
-  padding: 10px 80px;
+  padding: 10px 60px;
   letter-spacing: 3px;
   appearance: none;
   border: 0;
   border-radius: 5px;
   background: #c8c9cd;
   color: #3a3636;
-  padding: 8px 16px;
-  min-width: 80px;
+  min-width: 60px;
+  overflow: hidden;
+}
+
+.btn span{
+  position:relative;
+}
+
+.btn::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150%;
+  height: 500%;
+
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-110%);
+  transform: translateX(-110%);
+  background: #00b7ee;
+}
+
+.btn:hover::before{
+  -webkit-transform: translateX(-9%) translateY(-25%);
+  transform: translateX(-9%) translateY(-25%);
 }
 
 .main-container {
