@@ -128,7 +128,7 @@ body {
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-110%);
   transform: translateX(-110%);
-  background: #00b7ee;
+  background: linear-gradient(60deg,rgb(90, 90, 255),rgb(255, 190, 70));
 }
 
 .btn:hover::before{
