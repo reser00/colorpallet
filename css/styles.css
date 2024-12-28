@@ -108,7 +108,7 @@ body {
   min-width: 60px;
   overflow: hidden;
 }
-
+/* ここからボタンの演出 参考：https://jajaaan.co.jp/css/button/ */
 .btn span{
   position:relative;
 }
@@ -128,13 +128,14 @@ body {
   transition: all .5s ease-in-out;
   -webkit-transform: translateX(-110%);
   transform: translateX(-110%);
-  background: linear-gradient(60deg,rgb(90, 90, 255),rgb(255, 190, 70));
+  background: linear-gradient(60deg,rgb(90, 90, 255),rgb(255, 190, 70));/* グラデーション */
 }
 
 .btn:hover::before{
   -webkit-transform: translateX(-9%) translateY(-25%);
   transform: translateX(-9%) translateY(-25%);
 }
+/*ここまでボタンの演出*/
 
 .main-container {
   height: 100%;
