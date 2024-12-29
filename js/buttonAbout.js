@@ -48,15 +48,15 @@ function openModalAbout() {
     //今回は別ファイルにHTMLを用意してurlパラメータで指定する。コールバックは用意しない
 
     const modalAbout = createAboutWindow.create({
-        name: 'my-modal-window',
-        title: 'モーダルウィンドウ',
-        left: 0, top: 0, width: 320, height: 220,
+        name: 'windowAbout',
+        title: 'color Palletとは？',
+        left: 0, top: 0, width: 500, height: 400,
         movable: false,
         resizable: false,
  
     });
     //画面の中心に配置する
-    modalAbout.setPosition(window.innerWidth / 2, window.innerHeight / 2, 'CENTER_BOTTOM');
+    modalAbout.setPosition(window.innerWidth / 2, window.innerHeight / 2, 'CENTER_CENTER');
 
     // //モーダルウィンドウとして開く
     // modalAbout.showModal(_frame => {
