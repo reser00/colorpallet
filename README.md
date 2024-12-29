@@ -11,8 +11,10 @@ Although I could have chosen them randomly, I decided to take the opportunity to
 The program outputs lighter, darker, and inverted colors based on the chosen color.
 選んだ色に対して明るい色、暗い色、逆相の色が出力されます。
 
-！！　None of the colors meet the WCAG standard. The inverted colors do not have saturation differences. Note that we only output colors that are used as decoration.　！！
-！！　WCAG基準は、どの色も満たしていない可能性があります。逆相の色は、彩度の差が不足しています。あくまで装飾として使うための色を出力していることに注意してください。　！！
+！！　None of the colors meet the WCAG standard by your choice. The inverted colors do not have saturation differences. Note that we only output colors that are used as decoration.　！！
+！！　WCAG基準は、元の色に対してどの色も満たしていない可能性があります。逆相の色は、彩度の差が不足しています。唯一の例外は、「明るい色と逆相の色の組み合わせ」です。選択した色に対する背景の色ではなく、あくまで装飾として使うための色を出力していることに注意してください。　！！
 
 I would like to tweak this in the future.
 今後調整予定です。
+
+©︎2024 reser00
