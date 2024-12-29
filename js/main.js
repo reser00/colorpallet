@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `#${rgb.map((value) => value.toString(16).padStart(2, "0")).join("")}`;
 
   // 明るい色
-  const lightenColor = (rgb, offset = 50) =>
+  const lightenColor = (rgb, offset = 70) =>
     rgb.map((value) => Math.min(255, value + offset));
   const applyLightenedColor = () => {
     const selectedColor = parseColorInput(colorPicker.value);
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // 暗い色
-  const darkenColor = (rgb, offset = 50) =>
+  const darkenColor = (rgb, offset = 70) =>
     rgb.map((value) => Math.max(0, value - offset));
   const applyDarkenedColor = () => {
     const selectedColor = parseColorInput(colorPicker.value);
