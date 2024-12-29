@@ -1,6 +1,6 @@
 //参考：https://qiita.com/riversun/items/1adffa5674bc5123b16d
 
-//aboutボタンが押された、という情報を取得する
+//HowToボタンが押された、という情報を取得する
 const buttonClickHowTo = document.getElementById("howTo");
 
 //モーダルウインドウを開く処理
