@@ -53,7 +53,11 @@ function openModalAbout() {
         left: 0, top: 0, width: 500, height: 400,
         movable: false,
         resizable: false,
- 
+        style: {
+            backgroundColor:'rgb(220, 220, 220)',
+            overflow: 'auto'
+        },
+        url:'./common/descAbout.html'
     });
     //画面の中心に配置する
     modalAbout.setPosition(window.innerWidth / 2, window.innerHeight / 2, 'CENTER_CENTER');
