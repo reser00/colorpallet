@@ -238,3 +238,41 @@ body {
 .footer p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* ここまで本体のスタイル */
+
+/* ここからボタン内部のスタイル */
+
+.descriptionTitle {
+  margin: 0 auto;
+}
+
+.descriptionTitle h1{
+  font-family:"Jura", serif;
+  -webkit-text-stroke: 1px #fff;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.descriptionTitle h1 span{
+  color:rgb(213, 128, 213);
+  font-size:60px;
+  font-weight:bold;
+}
+
+.descriptionTitle p{
+  text-align: end;
+  font-family: "Jura", serif;
+}
+
+.descriptionBody {
+  margin-top: 30px;
+  font-family: "M PLUS 1p", serif;
+  text-align: center;
+}
+
+.descriptionBody span{
+  color:#d06262;
+  font-size: 24px;
+}
