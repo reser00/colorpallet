@@ -150,6 +150,7 @@ body {
   justify-content: space-around;
   align-items: stretch;
 }
+
 .color-pallet {
   float: left;
 }
@@ -275,3 +276,5 @@ body {
 .descriptionBody span{
   color:#d06262;
 }
+
+/* ここからレスポンシブ（幅900px未満に対応させる） */
