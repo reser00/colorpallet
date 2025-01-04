@@ -141,18 +141,14 @@ body {
   height: 100%;
   margin-right: 40px;
   margin-left: 40px;
-}
 
-.container {
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: stretch;
-}
 
-.color-pallet {
-  float: left;
 }
 
 .color-pallet h2 {
@@ -167,10 +163,8 @@ body {
 #colorPicker {
   width: 100px;
   height: 100px;
-  margin-left: 55px;
   border-radius: 10px;
   transform: rotate(45deg);
-  align-items: center;
 }
 
 .selectedColor {
