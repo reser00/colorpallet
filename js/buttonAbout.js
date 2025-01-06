@@ -1,6 +1,4 @@
-
-//以下はソッチの実装。参考：https://qiita.com/riversun/items/1adffa5674bc5123b16d
-
+//参考：https://qiita.com/riversun/items/1adffa5674bc5123b16d
 
 //aboutボタンが押された、という情報を取得する
 const buttonClickAbout = document.getElementById("about");
@@ -12,9 +10,9 @@ function openModalAbout() {
     const modalAbout = createAboutWindow.create({
         name: 'windowAbout',
         title: 'color Palletとは？',
-        left: 0, top: 0, width: 500, height: 400,
-        movable: false,
-        resizable: false,
+        left: 0, top: 0, width: 300, height: 500,
+        movable: true,
+        resizable: true,
         style: {
             backgroundColor:'rgb(220, 220, 220)',
             overflow: 'auto'
@@ -23,8 +21,6 @@ function openModalAbout() {
     });
     //画面の中心に配置する
     modalAbout.setPosition(window.innerWidth / 2, window.innerHeight / 2, 'CENTER_CENTER');
-
-  
 
     //モーダルウィンドウとして開く.
     modalAbout.showModal();
